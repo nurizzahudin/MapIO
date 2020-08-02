@@ -9,6 +9,8 @@
 import React, { Component } from 'react';
 import { StyleSheet, View } from "react-native";
 import Map from "./components/map"; 
+import Slot from "./components/slot";
+import FloatingButton from "./components/floating-button";
 
 const styles = StyleSheet.create({
   container: {
@@ -21,6 +23,9 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <Map />
+        <Slot position="topRight">
+          <FloatingButton />
+        </Slot>
       </View>
     );
   }
